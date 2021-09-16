@@ -1,10 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from 'react-bootstrap/Container'
 import './header.css'
 import logo from './logo.png'
+import  About from './About'
+import Programs from "./Programs";
+import Blog from "./Blog";
+import Home from "./Home";
+import Join from "./Join"
+
 function Header() {
   return (
     <Router>
@@ -30,8 +36,8 @@ function Header() {
             <Nav.Link><Link  className='link' to="/programs" style={{textDecoration: 'none'}}>Our Programs</Link></Nav.Link>
             <Nav.Link><Link className='link' to="/blog" style={{textDecoration: 'none'}}>Blog</Link></Nav.Link>
             <Nav.Link><Link className='link'  to="/About"  style={{ textDecoration: 'none'}}>About Us</Link></Nav.Link>
-            <Nav.Link><Link className='link' to="/login"  style={{textDecoration: 'none'}}>Login/Signup</Link></Nav.Link>
             
+            <Nav.Link><Link className='link' to="/joinus" style={{textDecoration: 'none'}}>Join team</Link></Nav.Link>
           </Nav>
           </Navbar.Collapse>
           </Container>
@@ -39,7 +45,7 @@ function Header() {
 
       <Switch>
         <Route path="/about">
-          <About />
+          <About/>
         </Route>
         <Route path="/programs">
           <Programs />
@@ -49,29 +55,25 @@ function Header() {
         </Route>
         <Route path="/login">
           <Login/>
+          </Route>
+          <Route path="/joinus">
+          <Join/>
         </Route>
         <Route path="/">
-          <Home />
+          <Home/>
         </Route>
+        <Redirect TO='/'/>
       </Switch>
     </Router>
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
 
-function About() {
-  return <h2>About</h2>;
-}
 
-function Programs() {
-  return <h2>Our Programs </h2>;
-}
-function Blog() {
-  return <h2>Blog</h2>;
-}
+
+
+
+
 
 function Login() {
   return <h2> login signup</h2>;
