@@ -1,17 +1,10 @@
-import React from 'react'
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import React from "react";
+
+
 function Programs() {
-    return (
-        <Container>
-            <Row>
-                <Col></Col>
-                <Col></Col>
-                <Col></Col>
-            </Row>
-        </Container>
-    )
+  return (
+    <h1>Our Programs</h1>
+  );
 }
 
-export default Programs
+export default Programs;

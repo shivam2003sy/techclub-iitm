@@ -4,5 +4,13 @@
   }
   .link:hover {
      color: #f4ae02
-  }
-  
+}
+.main{
+  position:fixed;
+  border: 40px solid #f4ae02;
+  font: bold 1em Tahoma, arial, sans-serif;
+  position:sticky;
+  padding: 20px  ;
+  text-align:center
+}
+

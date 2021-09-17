@@ -1,29 +1,3 @@
-.App {
-  
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: 40px solid #f4ae02;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0
-}
-.page-wrap {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  left: 30px;
-  bottom: 30px;
-  background: white;
-  border-radius: 30px;
-  padding: 20px;
-  
+html{
+    background-color: #f4ae02;
 }

@@ -12,7 +12,10 @@ import Home from "./Home";
 import Join from "./Join"
 
 function Header() {
-  return (
+  return (  
+    <div className='main'>
+      <div className='page-wrap'>
+      
     <Router>
       <Navbar collapseOnSelect expand="lg">
           <Container>
@@ -42,6 +45,9 @@ function Header() {
           </Navbar.Collapse>
           </Container>
       </Navbar>
+      <div>
+        
+      </div>
 
       <Switch>
         <Route path="/about">
@@ -65,6 +71,10 @@ function Header() {
         <Redirect TO='/'/>
       </Switch>
     </Router>
+    </div>
+    </div>
+
+
   );
 }
 

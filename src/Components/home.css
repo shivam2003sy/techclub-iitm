@@ -1,0 +1,21 @@
+
+.heading:hover{
+    color: #781f19;
+}
+img {
+    border-radius: 10px;
+    height: auto;
+  }
+.button{
+    color: #f4ae02;
+    font-style:  bold;
+    background-color: #f4ae02;
+    border-radius: 20px;
+}
+.a{
+    color: black;
+
+}
+.a:hover{
+    color: #781f19;
+}
